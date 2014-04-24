@@ -28,4 +28,7 @@ test('good order', function(t) {
   t.end();
 });
 
-
+test('1-element all', function(t) {
+  t.deepEqual(cubeSideArray(['foo']), ['foo', 'foo', 'foo', 'foo', 'foo', 'foo']);
+  t.end();
+});

@@ -37,37 +37,37 @@ var expandName = function(name, order) {
     array[back] = array[front] = array[top] = array[bottom] = array[left] = array[right] = name;
   } else if (name.length === 1) {
     // 0 is all
-    array[back] = array[front] = array[top] = array[bottom] = array[left] = array[right] = name[back];
+    array[back] = array[front] = array[top] = array[bottom] = array[left] = array[right] = name[0];
   } else if (name.length === 2) {
     // 0 is top/bottom, 1 is sides
-    array[back] = array[front] = array[left] = array[right] = name[front];
-    array[top] = array[bottom] = name[back];
+    array[back] = array[front] = array[left] = array[right] = name[0];
+    array[top] = array[bottom] = name[1];
   } else if (name.length === 3) {
     // 0 is top, 1 is bottom, 2 is sides
-    array[back] = array[front] = array[left] = array[right] = name[top];
-    array[top] = name[back];
-    array[bottom] = name[front];
+    array[back] = array[front] = array[left] = array[right] = name[2];
+    array[top] = name[0];
+    array[bottom] = name[1];
   } else if (name.length === 4) {
     // 0 is top, 1 is bottom, 2 is front/back, 3 is left/right
-    array[back] = array[front] = name[top];
-    array[top] = name[back];
-    array[bottom] = name[front];
-    array[left] = array[right] = name[bottom];
+    array[back] = array[front] = name[2];
+    array[top] = name[0];
+    array[bottom] = name[1];
+    array[left] = array[right] = name[3];
   } else if (name.length === 5) {
     // 0 is top, 1 is bottom, 2 is front, 3 is back, 4 is left/right
-    array[back] = name[bottom];
-    array[front] = name[top];
-    array[top] = name[back];
-    array[bottom] = name[front];
-    array[left] = array[right] = name[left];
+    array[back] = name[3];
+    array[front] = name[2];
+    array[top] = name[0];
+    array[bottom] = name[1];
+    array[left] = array[right] = name[4];
   } else if (name.length === 6) {
     // 0 is back, 1 is front, 2 is top, 3 is bottom, 4 is left, 5 is right
-    array[back] = name[back];
-    array[front] = name[front];
-    array[top] = name[top];
-    array[bottom] = name[bottom];
-    array[left] = name[left];
-    array[right] = name[right];
+    array[back] = name[0];
+    array[front] = name[1];
+    array[top] = name[2];
+    array[bottom] = name[3];
+    array[left] = name[4];
+    array[right] = name[5];
   } else {
     throw new Error('expandName('+name+'): invalid side count array length '+name.length);
   }
