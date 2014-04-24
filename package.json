@@ -8,9 +8,17 @@
     "url": "git@github.com:deathcap/cube-side-array.git"
   },
   "keywords": [
-    "voxel"
+    "voxel",
+    "cube",
+    "sides",
+    "faces"
   ],
-  "dependencies": {
+  "scripts": {
+    "test": "node test.js"
   },
-  "license": "MIT"
+  "dependencies": {},
+  "license": "MIT",
+  "devDependencies": {
+    "tape": "^2.12.3"
+  }
 }
