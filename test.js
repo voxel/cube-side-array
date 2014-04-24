@@ -3,7 +3,7 @@ var cubeSideArray = require('./');
 var test = require('tape');
 
 test('scalar', function(t) {
-  t.deepEqual(cubeSideArray('foo'), ['foo', 'foo', 'foo', 'foo', 'foo', 'foo']);
+  t.deepEqual(cubeSideArray('dirt'), ['dirt', 'dirt', 'dirt', 'dirt', 'dirt', 'dirt']);
   t.end();
 });
 
@@ -40,6 +40,17 @@ test('2-element top/bottom + sides', function(t) {
 
 test('3-element top, bottom, sides', function(t) {
   t.deepEqual(cubeSideArray(['foo', 'bar', '_'], 'TBLRFK'), ['foo', 'bar', '_', '_', '_', '_']);
+  t.end();
+});
+
+test('grass', function(t) {
+  t.deepEqual(cubeSideArray(['grass_top', 'dirt', 'grass_side'], 'RTFLBK'),
+  [ 'grass_side',
+    'grass_top',
+    'grass_side',
+    'grass_side',
+    'dirt',
+    'grass_side' ]);
   t.end();
 });
 
