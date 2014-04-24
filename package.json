@@ -1,7 +1,7 @@
 {
   "name": "cube-side-array",
   "description": "cube side array expansion for texture faces",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "cube-side.js",
   "repository": {
     "type": "git",
