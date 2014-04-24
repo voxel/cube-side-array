@@ -1,6 +1,7 @@
 'use strict';
 
-var expandName = function(name, array, order) {
+var expandName = function(name, order) {
+  var array = new Array(6);
 
   order = order || 'KFTBLR';
 
@@ -61,6 +62,8 @@ var expandName = function(name, array, order) {
   } else {
     throw new Error('expandName('+name+'): invalid side count array length '+name.length);
   }
+
+  return array;
 };
 
 module.exports = expandName;
