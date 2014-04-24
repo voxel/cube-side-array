@@ -37,3 +37,23 @@ test('2-element top/bottom + sides', function(t) {
   t.deepEqual(cubeSideArray(['foo', 'bar'], 'TBLRFK'), ['foo', 'foo', 'bar', 'bar', 'bar', 'bar']);
   t.end();
 });
+
+test('3-element top, bottom, sides', function(t) {
+  t.deepEqual(cubeSideArray(['foo', 'bar', '_'], 'TBLRFK'), ['foo', 'bar', '_', '_', '_', '_']);
+  t.end();
+});
+
+test('4-element top, bottom, front/back, left/right', function(t) {
+  t.deepEqual(cubeSideArray(['foo', 'bar', 'quux', '_'], 'TBFKLR'), ['foo', 'bar', 'quux', 'quux', '_', '_']);
+  t.end();
+});
+
+test('5-element top, bottom, front, back, left/right', function(t) {
+  t.deepEqual(cubeSideArray(['top', 'bot', 'fnt', 'bck', '_'], 'TBFKLR'), ['top', 'bot', 'fnt', 'bck', '_', '_']);
+  t.end();
+});
+
+test('object 6-element', function(t) {
+  t.deepEqual(cubeSideArray({right:1, top:2, front:3, left:4, bottom:5, back:6}, 'RTFLBK'), [1, 2, 3, 4, 5, 6]);
+  t.end();
+});
