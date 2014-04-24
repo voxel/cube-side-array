@@ -40,8 +40,8 @@ var expandName = function(name, order) {
     array[back] = array[front] = array[top] = array[bottom] = array[left] = array[right] = name[0];
   } else if (name.length === 2) {
     // 0 is top/bottom, 1 is sides
-    array[back] = array[front] = array[left] = array[right] = name[0];
-    array[top] = array[bottom] = name[1];
+    array[back] = array[front] = array[left] = array[right] = name[1];
+    array[top] = array[bottom] = name[0];
   } else if (name.length === 3) {
     // 0 is top, 1 is bottom, 2 is sides
     array[back] = array[front] = array[left] = array[right] = name[2];

@@ -32,3 +32,8 @@ test('1-element all', function(t) {
   t.deepEqual(cubeSideArray(['foo']), ['foo', 'foo', 'foo', 'foo', 'foo', 'foo']);
   t.end();
 });
+
+test('2-element top/bottom + sides', function(t) {
+  t.deepEqual(cubeSideArray(['foo', 'bar'], 'TBLRFK'), ['foo', 'foo', 'bar', 'bar', 'bar', 'bar']);
+  t.end();
+});
