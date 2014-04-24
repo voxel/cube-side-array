@@ -3,7 +3,12 @@
 var expandName = function(name, order) {
   var array = new Array(6);
 
-  order = order || 'KFTBLR';
+  // from voxel-mesher/ao-mesher -- also seen: 'KFTBLR' (voxel-texture), 'FKTBRL' (Mozilla's WebGL cube demo)
+  order = order || 'RTFLBK';
+
+  if (order.length !== 6) {
+    throw new Error('expandName invalid order length: ' + order);
+  }
 
   var back   = order.indexOf('K');
   var front  = order.indexOf('F');
@@ -11,6 +16,10 @@ var expandName = function(name, order) {
   var bottom = order.indexOf('B');
   var left   = order.indexOf('L');
   var right  = order.indexOf('R');
+
+  if (back < 0 || front < 0 || top < 0 || bottom < 0 || left < 0 || right < 0) {
+    throw new Error('expandName invalid order: ' + order);
+  }
 
   if (!name || name.length === 0) {
     // empty
