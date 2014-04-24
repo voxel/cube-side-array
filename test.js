@@ -53,6 +53,13 @@ test('5-element top, bottom, front, back, left/right', function(t) {
   t.end();
 });
 
+test('6-element bad', function(t) {
+  t.throws(function() {
+    cubeSideArray([1,2,3,4,5,6]);
+  });
+  t.end();
+});
+
 test('object 6-element', function(t) {
   t.deepEqual(cubeSideArray({right:1, top:2, front:3, left:4, bottom:5, back:6}, 'RTFLBK'), [1, 2, 3, 4, 5, 6]);
   t.end();

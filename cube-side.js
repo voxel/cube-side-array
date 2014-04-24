@@ -61,13 +61,7 @@ var expandName = function(name, order) {
     array[bottom] = name[1];
     array[left] = array[right] = name[4];
   } else if (name.length === 6) {
-    // 0 is back, 1 is front, 2 is top, 3 is bottom, 4 is left, 5 is right
-    array[back] = name[0];
-    array[front] = name[1];
-    array[top] = name[2];
-    array[bottom] = name[3];
-    array[left] = name[4];
-    array[right] = name[5];
+    throw new Error('expandName('+name+'): 6-element array support removed, use objects instead ({back:.., front:..., ...})');
   } else {
     throw new Error('expandName('+name+'): invalid side count array length '+name.length);
   }
