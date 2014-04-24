@@ -2,6 +2,7 @@
   "name": "cube-side-array",
   "description": "",
   "version": "0.0.1",
+  "main": "cube-side.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/cube-side-array.git"
