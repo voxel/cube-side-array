@@ -1,0 +1,15 @@
+{
+  "name": "cube-side-array",
+  "description": "",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:deathcap/cube-side-array.git"
+  },
+  "keywords": [
+    "voxel"
+  ],
+  "dependencies": {
+  },
+  "license": "MIT"
+}
