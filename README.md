@@ -2,6 +2,8 @@
 
 Convenient cube side array expansion for texture faces
 
+[![Build Status](https://travis-ci.org/deathcap/cube-side-array.png)](https://travis-ci.org/deathcap/cube-side-array)
+
 Usage:
 
     var expandName = require('cube-side-array');
