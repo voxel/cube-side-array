@@ -5,7 +5,7 @@
   "main": "cube-side.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:deathcap/cube-side-array.git"
+    "url": "git@github.com:voxel/cube-side-array.git"
   },
   "keywords": [
     "voxel",

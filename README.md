@@ -2,7 +2,7 @@
 
 Convenient cube side array expansion for texture faces
 
-[![Build Status](https://travis-ci.org/deathcap/cube-side-array.png)](https://travis-ci.org/deathcap/cube-side-array)
+[![Build Status](https://travis-ci.org/voxel/cube-side-array.png)](https://travis-ci.org/voxel/cube-side-array)
 
 Usage:
 
@@ -32,7 +32,7 @@ Inspired by @shama's [voxel-texture](https://github.com/shama/voxel-texture) `_e
 The second argument can optionally be a 6-character string representing the side order requested
 for the return value. Examples:
 
-* RTFLBK - used by [voxel-mesher](https://github.com/deathcap/voxel-mesher), [ao-mesher](https://github.com/mikolalysenko/ao-mesher)
+* RTFLBK - used by [voxel-mesher](https://github.com/voxel/voxel-mesher), [ao-mesher](https://github.com/mikolalysenko/ao-mesher)
 * KFTBLR - used by [voxel-texture-shader](https://github.com/deathcap/voxel-texture-shader), [voxel-texture](https://github.com/shama/voxel-texture)
 * FKTBRL - used in this [Mozilla WebGL cube demo](https://developer.mozilla.org/en-US/docs/Web/WebGL/Using_textures_in_WebGL)
 
