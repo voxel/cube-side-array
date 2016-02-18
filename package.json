@@ -19,6 +19,6 @@
   "dependencies": {},
   "license": "MIT",
   "devDependencies": {
-    "tape": "^2.12.3"
+    "tape": "^4.4.0"
   }
 }
